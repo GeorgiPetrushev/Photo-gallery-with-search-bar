@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+        <title>Photo gallery using Jquery</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <link href="lightbox2-2.11.1/dist/css/lightbox.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <form class="form">
+            
+                <input  type="text" id="input" name="bar" placeholder="12pcs available">
+            </form>
+        </header>
+        <main>
+            <div class="container">
+                
+                <a href="photos/01.jpg" data-lightbox="roadtrip" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." data-alt=" Hay Bales"><img class="small-img" src="photos/thumbnails/01.jpg" alt="pic 1"></a>
+                <a href="photos/02.jpg" data-lightbox="roadtrip" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here." data-alt="Lake"><img class="small-img" src="photos/thumbnails/02.jpg" alt="pic 1"></a>
+                <a href="photos/03.jpg" data-lightbox="roadtrip" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." data-alt="Canyon"><img class="small-img" src="photos/thumbnails/03.jpg" alt="pic 1"></a>
+                <a href="photos/04.jpg" data-lightbox="roadtrip" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." data-alt="Iceberg"><img class="small-img" src="photos/thumbnails/04.jpg" alt="pic 1"></a>
+                <a href="photos/05.jpg" data-lightbox="roadtrip" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." data-alt="Desert"><img class="small-img" src="photos/thumbnails/05.jpg" alt="pic 1"></a>
+                <a href="photos/06.jpg" data-lightbox="roadtrip" data-title="Fall is coming, I love when the leaves on the trees start to change color." data-alt="Fall"><img class="small-img" src="photos/thumbnails/06.jpg" alt="pic 1"></a>
+                <a href="photos/07.jpg" data-lightbox="roadtrip" data-title="I drove past this plantation yesterday, everything is so green!" data-alt="Plantation"><img class="small-img" src="photos/thumbnails/07.jpg" alt="pic 1"></a>
+                <a href="photos/08.jpg" data-lightbox="roadtrip" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!" data-alt="Dunes"><img class="small-img" src="photos/thumbnails/08.jpg" alt="pic 1"></a>
+                <a href="photos/09.jpg" data-lightbox="roadtrip" data-title="We enjoyed a quiet stroll down this countryside lane." data-alt="Countryside Lane"><img class="small-img" src="photos/thumbnails/09.jpg" alt="pic 1"></a>
+                <a href="photos/10.jpg" data-lightbox="roadtrip" data-title="Sunset at the coast! The sky turned a lovely shade of orange." data-alt="Sunset"><img class="small-img" src="photos/thumbnails/10.jpg" alt="pic 1"></a>
+                <a href="photos/11.jpg" data-lightbox="roadtrip" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." data-alt="Cave"><img class="small-img" src="photos/thumbnails/11.jpg" alt="pic 1"></a>
+                <a href="photos/12.jpg" data-lightbox="roadtrip" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." data-alt="Bluebells"><img class="small-img" src="photos/thumbnails/12.jpg" alt="pic 1"></a>
+                
+
+            </div>
+
+        </main>
+        <footer>
+            <h5>copy right Georgi Petrushev</h5>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="lightbox2-2.11.1/dist/js/lightbox.js"></script>
+        <script src="script.js"></script>
+        <script>
+             lightbox.option({
+            'showImageNumberLabel': false,
+            'maxWidth': 800,
+            'positionFromTop': 150,
+            'wrapAround': true
+        })
+        </script>
+    </body>
+
+</html>
